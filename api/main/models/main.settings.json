@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mains",
+  "info": {
+    "name": "main"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "heading": {
+      "type": "string",
+      "required": false,
+      "default": "Professional"
+    },
+    "button": {
+      "type": "string",
+      "default": "Book Now"
+    },
+    "span": {
+      "type": "string",
+      "default": "Car Detailing Services"
+    }
+  }
+}
