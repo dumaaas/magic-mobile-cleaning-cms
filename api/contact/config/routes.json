@@ -33,14 +33,6 @@
       }
     },
     {
-      "method": "POST",
-      "path": "/contacts/sendEmail",
-      "handler": "contact.sendEmail",
-      "config": {
-        "policies": []
-      }
-    },
-    {
       "method": "PUT",
       "path": "/contacts/:id",
       "handler": "contact.update",

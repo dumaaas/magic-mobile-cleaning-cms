@@ -7,11 +7,11 @@
 const { parseMultipartData, sanitizeEntity } = require('strapi-utils');
 
 module.exports = {
-    async sendEmail (ctx) {
+    async create (ctx) {
         let entity;
-
+        console.log("prije entity");
         entity = await strapi.services.contact.create(ctx.request.body);
-
+        console.log("posle entity", entity);
         await strapi.plugins['email'].services.email.send({
             to: 'markodumnic8@gmail.com',
             from: entity.email,
